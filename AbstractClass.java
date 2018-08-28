@@ -1,10 +1,11 @@
 abstract class Animal
 {
-	String color,breed,name;
+	String color="black",breed="German",name="Kesper";
    abstract void eat();
    void speak()
    {
-	   System.out.println("Barks");
+	   
+	   System.out.println(name+" is a "+color+" coloured "+breed +" breed who Barks");
    }
    
 }
@@ -12,7 +13,7 @@ class Dog extends Animal
 {
 	void eat()
 	{
-		System.out.println("Dog eats Pedigree");
+		System.out.println(super.name+" eats Pedigree");
 	}
 }
 public class AbstractClass {
